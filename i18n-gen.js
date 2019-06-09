@@ -1,8 +1,8 @@
 const fs = require('fs');
 
 let source_dir = './src/i18n/';
-let bundle = './i18n.css';
-let manifest = './i18n.json';
+let bundle = './dist/i18n.css';
+let manifest = './dist/i18n.json';
 let available_languages = {};
 
 fs.unlink(bundle, ()=>{});

@@ -4,11 +4,13 @@
   "scripts": {
     "build": "rollup -c",
     "watch": "rollup -cw",
-    "serve": "browser-sync start --files \"docs\" --server \"docs\"",
-    "i18n": "node i18n-gen.js"
+    "serve": "browser-sync start --files \"dist\" --server \"dist\"",
+    "i18n": "node i18n-gen.js",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "browser-sync": "^2.26.7",
+    "gh-pages": "^2.0.1",
     "rollup": "^1.14.4",
     "rollup-plugin-copy": "^2.0.1"
   }
