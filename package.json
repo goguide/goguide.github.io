@@ -6,7 +6,7 @@
     "watch": "rollup -cw",
     "serve": "browser-sync start --files \"dist\" --server \"dist\"",
     "i18n": "node i18n-gen.js",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist -b master"
   },
   "devDependencies": {
     "browser-sync": "^2.26.7",
