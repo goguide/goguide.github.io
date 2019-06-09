@@ -1,0 +1,4 @@
+:lang(en).welcome:before { content: 'Greetings' }
+:lang(en).rule-1:before { content: 'In Go, black and white move one after another. Black goes first.' }
+:lang(ru).welcome:before { content: 'Здравствуй' }
+:lang(ru).rule-1:before { content: 'В Го, белые и черные ходят по очереди. Черные ходят первыми.' }
