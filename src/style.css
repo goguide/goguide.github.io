@@ -1,0 +1,84 @@
+/* Main styles */
+
+.light {
+    background-color: #efefef;
+    color: #606c76;
+}
+
+.dark {
+    background: #2C2F34;
+    color: #f2f2f2;
+}
+
+#language-select {
+    min-width: 14.0rem;
+    max-width: 14.0rem;
+    -moz-appearance: menulist;
+    -webkit-appearance: menulist;
+}
+
+/* Moon & Sun icons */
+
+.dark-icon, .light-icon {
+   width: 100%;
+   height: 100;
+}
+
+.light-icon {
+    filter: invert(100%);
+}
+
+.dark-icon {
+    display: none;
+}
+
+/* Layout */
+
+.wrap {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 85%;
+    margin: 0 auto 0 auto;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-width: 80%;
+    max-width: 80%;
+    margin: 5.0rem auto 0 auto;
+}
+
+.language-select, .language-select select, .language-select label {
+    display: flex;
+}
+
+.language-select label {
+    margin: 0.5rem 2.0rem 0 0;
+}
+
+.theme-switch {
+    display: flex;
+    max-width: 5.0rem;
+    max-height: 5.0rem;
+}
+
+/* Dark mode tweaks */
+
+body.dark select {
+    color: #fafafa;
+}
+body.dark select option {
+    background-color: #22242e;
+}
+body.dark select option:active {
+    background-color: black;
+}

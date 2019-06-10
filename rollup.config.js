@@ -8,7 +8,14 @@ export default {
     },
     plugins: [
         copy({
-            targets: ['src/index.html'],
+            targets: [
+                'src/index.html',
+                'src/style.css',
+                'src/res/milligram.min.css',
+                'src/res/milligram.min.css.map',
+                'src/res/sun.svg',
+                'src/res/moon.svg',
+            ],
             outputFolder: './dist/'
         })
     ]

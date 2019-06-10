@@ -5,8 +5,8 @@ let bundle = './dist/i18n.css';
 let manifest = './dist/i18n.json';
 let available_languages = {};
 
-fs.unlink(bundle, ()=>{});
-fs.unlink(manifest, ()=>{});
+if (fs.existsSync(bundle)) { fs.unlink(bundle, ()=>{}); }
+if (fs.existsSync(manifest)) { fs.unlink(manifest, ()=>{}); }
 
 fs.readdirSync(source_dir).forEach(file => {
     content = JSON.parse(fs.readFileSync(source_dir+file).toString());
@@ -24,5 +24,4 @@ fs.readdirSync(source_dir).forEach(file => {
 });
 
 fs.writeFileSync(manifest, JSON.stringify(available_languages));
-
 console.log(available_languages)
