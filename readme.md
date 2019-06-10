@@ -1,3 +1,8 @@
+# Synopsis
+
+The goal of this project is to create a free, open source, modern, mobile-friendly and interactive introduction page for the game of Go.  
+All other currently existing solutions are either technologically outdated or are incomplete/static.
+
 # Tasks
 
 Primary:
