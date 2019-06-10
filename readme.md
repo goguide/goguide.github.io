@@ -1,4 +1,6 @@
-Primary tasks:
+# Tasks
+
+Primary:
 
 - [x] Implement i18n
 - [ ] Implement the board with PIXI
@@ -7,7 +9,7 @@ Primary tasks:
 - [x] Implement the day/night mode switch
 - [ ] Properly stylize the language select box (use a library)
 
-Secondary tasks:
+Secondary:
 
 - [ ] Pause the PIXI rendering when not in frame (scrolled past)
 - [ ] Use cookies to remember the language
@@ -15,3 +17,18 @@ Secondary tasks:
 - [ ] Make languages linkable (url param)
 - [ ] Add social buttons
 - [ ] Make chapters linkable (dynamic url hash as you scroll?)
+
+# Contribution
+
+## Code
+
+- `npm run start` for dev serve+watch
+
+- `npm run rebuild` for a clean prod rebuild
+
+- `npm run i18n` to generate i18n files
+
+## Translations
+
+Translation files are located at `src/i18n/`.  
+Submit a pull request and the translation will be added after a review.
